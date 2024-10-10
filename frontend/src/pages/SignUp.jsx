@@ -78,7 +78,7 @@ const SignUp = () => {
         className="bg-purple-800 rounded-lg p-3 text-white uppercase hover:opacity-80 disabled:opacity-80">
           {loading ? "Loading..." : "Sign Up"}
         </button>
-         <GoogleAuth /> 
+         {/*<GoogleAuth />*/}
 
       </form>
       <div className="flex gap-2 mt-5">

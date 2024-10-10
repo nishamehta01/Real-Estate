@@ -3,7 +3,7 @@ import {getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth"
 import { app } from "../firebase"
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { signInSucess } from  "../../redux/user/userSlice"
+import { signInSuccess } from  "../../redux/user/userSlice"
 
 const GoogleAuth = () => {
    const dispatch = useDispatch()
@@ -30,7 +30,7 @@ const GoogleAuth = () => {
 
           const data = await res.json()
 
-          dispatch(signInSucess(data))
+          dispatch(signInSuccess(data))
           navigate("/")
       } catch (error) {
          console.log("Could not sign in with google", error);

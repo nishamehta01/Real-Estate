@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link,  useNavigate } from "react-router-dom"
-import { signInFailure, signInStart, signInSucess } from '../../redux/user/userSlice'
+import { signInFailure, signInStart, signInSuccess } from '../../redux/user/userSlice'
 import GoogleAuth from '../compnents/GoogleAuth'
 
 const SignIn = () => {
@@ -37,7 +37,7 @@ const SignIn = () => {
       return
     }
 
-    dispatch(signInSucess(data))
+    dispatch(signInSuccess(data))
     navigate("/")
     }catch (error){
       dispatch(signInFailure(error.message))
