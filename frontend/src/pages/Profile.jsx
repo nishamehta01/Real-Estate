@@ -86,14 +86,14 @@ const Profile = () => {
        const data = await res.json()
        
        if(data.success === false){
-        dispatch(updateUserFailure(data.message)) //updateUserFailure
+        dispatch(updateUserFailure(data.message)) 
         return
        }
 
-       dispatch(updateUserSucces(data)) //update add
+       dispatch(updateUserSucces(data)) 
        setUpdateSucess(true)
     } catch (error) {
-      dispatch(updateUserFailure(error.message)) //update add
+      dispatch(updateUserFailure(error.message)) 
     }
   }
 
