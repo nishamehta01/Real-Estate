@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "firebase": "^10.14.1",
     "redux-devtools-extension": "^2.13.9"
   }
 }
